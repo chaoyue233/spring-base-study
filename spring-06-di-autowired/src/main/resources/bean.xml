@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通过自动装配的方式进行注入 -->
+    <bean id="cat" class="chaoyue.study.beans.Cat"/>
+    <bean id="dog" class="chaoyue.study.beans.Dog"/>
+
+    <!-- 根据名称自动装配 -->
+    <bean id="user1" class="chaoyue.study.beans.User" autowire="byName">
+        <property name="name" value="chaoyue1"/>
+    </bean>
+
+    <!-- 根据类型自动装配 -->
+    <bean id="user2" class="chaoyue.study.beans.User" autowire="byType">
+        <property name="name" value="chaoyue2"/>
+    </bean>
+
+    <!-- 使用构造器完成自动装配 根据构造器参数的类型-->
+    <bean id="user3" class="chaoyue.study.beans.OtherUser" autowire="constructor"/>
+
+</beans>
