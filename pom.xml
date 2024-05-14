@@ -15,6 +15,7 @@
         <module>spring-04-di-constructor</module>
         <module>spring-05-di-setter</module>
         <module>spring-06-di-autowired</module>
+        <module>spring-07-scope</module>
     </modules>
 
     <properties>
