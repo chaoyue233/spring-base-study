@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通过静态工厂的方式去创建对象 需要指定factoryMethod -->
+    <bean id="service1" class="chaoyue.study.service.MyService" factory-method="getService">
+    </bean>
+
+    <!-- 通过实例工厂的方式去创建对象 需要指定factoryBean -->
+    <bean id="serviceFactory" class="chaoyue.study.factory.ServiceFactory"/>
+    <bean id="service2" factory-bean="serviceFactory" factory-method="getMyService"/>
+</beans>

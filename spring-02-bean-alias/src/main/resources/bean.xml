@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- name 可以指定别名，别名可以指定多个 别名其实就是为了在逻辑上去区分资源-->
+    <!-- name 可以指定别名，别名可以指定多个 别名其实就是为了在逻辑上去区分资源 -->
     <bean id="user" name="user1,user2" class="chaoyue.study.beans.User">
     </bean>
 
