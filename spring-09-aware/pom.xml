@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-05-di-setter</artifactId>
+    <artifactId>spring-09-aware</artifactId>
 
     <dependencies>
         <dependency>

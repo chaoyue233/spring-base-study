@@ -4,6 +4,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 		https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="chaoyue.study.beans.User"/>
+    <bean id="someUsefulService" class="chaoyue.study.aware.SomeService"/>
 
 </beans>
