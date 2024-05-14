@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- name 可以指定别名，别名可以指定多个 别名其实就是为了在逻辑上去区分资源-->
+    <bean id="user" name="user1,user2" class="chaoyue.study.beans.User">
+    </bean>
+
+    <!-- alias 可以额外再配置别名 -->
+    <alias name="user" alias="user3"/>
+
+    <!-- 不指定id和name同样也是可以注入的，会使用全限定类名作为id -->
+    <bean class="chaoyue.study.beans.User"/>
+
+</beans>
