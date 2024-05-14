@@ -13,6 +13,7 @@
         <module>spring-02-bean-alias</module>
         <module>spring-03-bean-instantiation</module>
         <module>spring-04-di-constructor</module>
+        <module>spring-05-di-setter</module>
     </modules>
 
     <properties>

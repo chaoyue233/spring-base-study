@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 通过Setter方法的方式完成属性注入 -->
+    <bean id="cat" class="chaoyue.study.beans.Cat"/>
+    <bean id="dog" class="chaoyue.study.beans.Dog"/>
+    <bean id="user" class="chaoyue.study.beans.User">
+        <property name="name" value="chaoyue"/>
+        <property name="cat" ref="cat"/>
+        <property name="dog" ref="dog"/>
+    </bean>
+</beans>
