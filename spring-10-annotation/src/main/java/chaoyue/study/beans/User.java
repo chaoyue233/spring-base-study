@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
@@ -14,6 +15,9 @@ public class User {
     // @Autowired可以直接打在字段上，使用反射进行注入
     @Autowired
     private Weapon weapon;
+    // @Resource也可以实现注入
+    @Resource
+    private Car car;
 
     // 集合类型也可以注入，会找到到容器中所有匹配的类型
     @Autowired
@@ -46,6 +50,7 @@ public class User {
                 "pet=" + pet +
                 ", phone=" + phone +
                 ", weapon=" + weapon +
+                ", car=" + car +
                 ", petList=" + petList +
                 ", petMap=" + petMap +
                 '}';
