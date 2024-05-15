@@ -19,6 +19,7 @@
         <module>spring-08-callback</module>
         <module>spring-09-aware</module>
         <module>spring-10-annotation</module>
+        <module>spring-11-post-processor</module>
     </modules>
 
     <properties>
