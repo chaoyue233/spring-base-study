@@ -21,6 +21,7 @@
         <module>spring-10-annotation</module>
         <module>spring-11-post-processor</module>
         <module>spring-12-factory-bean</module>
+        <module>spring-13-profile</module>
     </modules>
 
     <properties>
