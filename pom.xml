@@ -20,6 +20,7 @@
         <module>spring-09-aware</module>
         <module>spring-10-annotation</module>
         <module>spring-11-post-processor</module>
+        <module>spring-12-factory-bean</module>
     </modules>
 
     <properties>
@@ -27,33 +28,31 @@
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <dependencyManagement>
-        <dependencies>
-            <!-- Spring核心组件 -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-core</artifactId>
-                <version>5.2.18.RELEASE</version>
-            </dependency>
-            <!-- Spring IoC的基础实现 -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-beans</artifactId>
-                <version>5.2.18.RELEASE</version>
-            </dependency>
-            <!-- Spring 在IoC的基础上提供的各种企业级扩展功能，如事件发布、国际化等等 -->
-            <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context</artifactId>
-                <version>5.2.18.RELEASE</version>
-            </dependency>
-            <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>4.13.2</version>
-                <scope>test</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
+    <dependencies>
+        <!-- Spring核心组件 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+        <!-- Spring IoC的基础实现 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+        <!-- Spring 在IoC的基础上提供的各种企业级扩展功能，如事件发布、国际化等等 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.2.18.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 </project>
