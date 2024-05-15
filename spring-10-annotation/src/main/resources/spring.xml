@@ -7,8 +7,6 @@
         http://www.springframework.org/schema/context
 		https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- 开启注解解析的后置处理器 -->
-    <context:annotation-config/>
-
+    <!-- 这个标签会隐藏包含 context:annotation-config -->
     <context:component-scan base-package="chaoyue.study"/>
 </beans>
