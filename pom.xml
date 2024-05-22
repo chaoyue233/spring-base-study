@@ -23,6 +23,7 @@
         <module>spring-12-factory-bean</module>
         <module>spring-13-profile</module>
         <module>spring-14-event</module>
+        <module>spring-15-jdbc-template</module>
     </modules>
 
     <properties>

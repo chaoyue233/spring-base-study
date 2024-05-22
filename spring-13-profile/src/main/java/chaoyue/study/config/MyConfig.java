@@ -9,6 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 
 /**
  * 注解@Profile本质上也是@Conditional注解
+ * 注解@PropertySource指明了资源的加载路径
  */
 @PropertySource("classpath:/my.properties")
 @Configuration
