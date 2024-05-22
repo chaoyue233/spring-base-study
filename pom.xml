@@ -24,6 +24,9 @@
         <module>spring-13-profile</module>
         <module>spring-14-event</module>
         <module>spring-15-jdbc-template</module>
+        <module>spring-16-resource</module>
+        <module>spring-17-bean-wrapper</module>
+        <module>spring-18-property-editor</module>
     </modules>
 
     <properties>
