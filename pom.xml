@@ -27,6 +27,7 @@
         <module>spring-16-resource</module>
         <module>spring-17-bean-wrapper</module>
         <module>spring-18-property-editor</module>
+        <module>spring-19-converter</module>
     </modules>
 
     <properties>
