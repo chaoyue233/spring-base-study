@@ -29,6 +29,7 @@
         <module>spring-18-property-editor</module>
         <module>spring-19-converter</module>
         <module>spring-20-data-binder</module>
+        <module>spring-21-spel</module>
     </modules>
 
     <properties>
